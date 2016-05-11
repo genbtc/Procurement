@@ -1,5 +1,6 @@
 ﻿using System.Windows.Controls;
 using Procurement.ViewModel;
+using Xceed.Wpf.Toolkit;
 
 namespace Procurement.View
 {
@@ -58,5 +59,15 @@ namespace Procurement.View
 
             AdvancedSearchItemControl.Items.Refresh();
         }
+
+        private void levelReqintegerUpDown_ValueChanged(object sender, System.Windows.RoutedPropertyChangedEventArgs<object> e)
+        {
+            var vm = this.DataContext as StashViewModel;
+            if (vm == null)
+                return;
+            vm.Filter = vm.Filter;
+        }
+
     }
+
 }

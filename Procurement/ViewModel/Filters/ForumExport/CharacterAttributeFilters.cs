@@ -8,7 +8,7 @@
         }
 
         public StrengthFilter()
-            : base("Increased Strength", "Strength", "Strength")
+            : base("Strength", "Strength", "Strength")
         { }
     }
 
@@ -21,7 +21,7 @@
         }
 
         public IntelligenceFilter()
-            : base("Increased Intelligence", "Intelligence", "Intelligence")
+            : base("Intelligence", "Intelligence", "Intelligence")
         { }
     }
 
@@ -33,7 +33,19 @@
         }
 
         public DexterityFilter()
-            : base("Increased Dexterity", "Increased Dexterity", "Dexterity")
+            : base("Dexterity", "Dexterity", "Dexterity")
+        { }
+    }
+
+    class AllAttributesFilter : StatFilter
+    {
+        public override FilterGroup Group
+        {
+            get { return FilterGroup.CharacterAttributes; }
+        }
+
+        public AllAttributesFilter()
+            : base("All Attributes", "All Attributes", "All Attributes")
         { }
     }
 }

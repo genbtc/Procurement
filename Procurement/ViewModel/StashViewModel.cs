@@ -52,10 +52,22 @@ namespace Procurement.ViewModel
                 processFilter();
             }
         }
+        private int _minLevelReq;
+        public int MinLevelReq
+        {
+            get { return _minLevelReq; }
+            set { _minLevelReq = value; }
+        }
+        private int _maxLevelReq;
+        public int MaxLevelReq
+        {
+            get { return _maxLevelReq; }
+            set { _maxLevelReq = value; }
+        }
 
         private void processFilter()
         {
-            List<IFilter> allfilters = getUserFilter(filter);
+            List<IFilter> allfilters = getUserFilter(filter, _minLevelReq, _maxLevelReq);
             allfilters.AddRange(categoryFilter);
 
             foreach (var item in tabsAndContent)
@@ -132,6 +144,23 @@ namespace Procurement.ViewModel
             }
         }
 
+        public string GemDistributionstring
+        {
+            get
+            {
+                var tempstring = "";
+                SortedDictionary<string, int> gemdict = ApplicationState.Stash[ApplicationState.CurrentLeague].GetTotalGemDistribution();
+                foreach (var item in gemdict)
+                {
+                    tempstring += item.Key + ": ";
+                    tempstring += item.Value;
+                    tempstring += " \n";
+                }
+
+                return tempstring;
+            }
+        }
+
         public List<string> AvailableItems { get; private set; }
 
 
@@ -145,6 +174,8 @@ namespace Procurement.ViewModel
         public StashViewModel(StashView stashView)
         {
             this.stashView = stashView;
+            this._minLevelReq = 0;
+            this._maxLevelReq = 999;
 
             refreshCommand = new DelegateCommand(x =>
             {
@@ -290,7 +321,7 @@ namespace Procurement.ViewModel
                 item.BorderBrush = Brushes.Transparent;
                 StashControl itemStash = new StashControl();
 
-                itemStash.SetValue(StashControl.FilterProperty, getUserFilter(filter));
+                itemStash.SetValue(StashControl.FilterProperty, getUserFilter(filter, _minLevelReq, _maxLevelReq));
                 item.Content = itemStash;
                 itemStash.TabNumber = ApplicationState.Stash[ApplicationState.CurrentLeague].Tabs[i - 1].i;
 
@@ -324,12 +355,12 @@ namespace Procurement.ViewModel
             return menuItem;
         }
 
-        private static List<IFilter> getUserFilter(string filter)
+        private static List<IFilter> getUserFilter(string filter,int minLevelReq=0, int maxLevelReq=999)
         {
             if (string.IsNullOrEmpty(filter))
                 return new List<IFilter>();
 
-            UserSearchFilter searchCriteria = new UserSearchFilter(filter);
+            UserSearchFilter searchCriteria = new UserSearchFilter(filter, minLevelReq, maxLevelReq);
             return new List<IFilter>() { searchCriteria };
         }
 

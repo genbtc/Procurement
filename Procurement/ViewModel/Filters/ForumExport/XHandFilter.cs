@@ -23,7 +23,7 @@ namespace Procurement.ViewModel.Filters.ForumExport
 
         public string Help
         {
-            get { return string.Concat("Returns all", handed, "(s)"); }
+            get { return string.Concat("Returns all ", handed, " Handed Weapon(s)"); }
         }
 
         public FilterGroup Group

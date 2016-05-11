@@ -10,3 +10,4 @@ Procurement/Procurement.csproj.user
 **/obj/
 
 .vs/
+*.suo
