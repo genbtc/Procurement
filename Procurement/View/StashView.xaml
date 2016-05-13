@@ -216,10 +216,10 @@
                                                             <FlowDocument>
                                                                 <Paragraph>
                                                                     <Bold>
-                                                                        <Run Foreground="#FFAB9066" Text="{Binding Key, Mode=OneWay}"></Run>
+                                                                        <Run Foreground="#FFAB9066" Text="{Binding Key, Mode=OneWay}" />
                                                                     </Bold>
-                                                                    <Run Foreground="#FFAB9066" Text=": "></Run>
-                                                                    <Run Foreground="#FFAB9066" Text="{Binding Value, Mode=OneWay, StringFormat=0.00}"></Run>
+                                                                    <Run Foreground="#FFAB9066" Text=": " />
+                                                                    <Run Foreground="#FFAB9066" Text="{Binding Value, Mode=OneWay, StringFormat=0.00}" />
                                                                 </Paragraph>
                                                             </FlowDocument>
                                                         </RichTextBox>
@@ -231,12 +231,12 @@
                             </StackPanel>
                         </Border>
                     </TabItem>
-                    <TabItem Header="  Advanced Search  " Style="{StaticResource NonImages}">
+                    <TabItem Header="Advanced Search" Style="{StaticResource NonImages}">
                         <Border BorderBrush="#FF76591B" BorderThickness="2" VerticalAlignment="Top" Background="Black">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal" Background="Black" Margin="0, 5, 0, 8">
                                     <Label Content="Filter :" Foreground="#FFAB9066" />
-                                    <TextBox Name="AdvancedSearchFilter" Width="270" Height="23" Foreground="#FFAB9066" Background="Black" KeyUp="AdvancedSearchFilter_KeyUp"></TextBox>
+                                    <TextBox Name="AdvancedSearchFilter" Width="270" Height="23" Foreground="#FFAB9066" Background="Black" KeyUp="AdvancedSearchFilter_KeyUp" />
                                 </StackPanel>
                                 <ScrollViewer VerticalScrollBarVisibility="Visible" CanContentScroll="True" MaxHeight="386">
                                     <Grid>

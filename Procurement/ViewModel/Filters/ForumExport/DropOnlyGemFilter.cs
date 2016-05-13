@@ -44,10 +44,7 @@ namespace Procurement.ViewModel.Filters
         public bool Applicable(Item item)
         {
             Gem gem = item as Gem;
-            if (gem == null)
-                return false;
-
-            return dropOnly.Contains(gem.TypeLine);
+            return gem != null && dropOnly.Contains(gem.TypeLine);
         }
     }
 }

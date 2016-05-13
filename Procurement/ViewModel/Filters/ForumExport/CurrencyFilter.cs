@@ -29,10 +29,7 @@ namespace Procurement.ViewModel.Filters.ForumExport
         {
             var currency = item as Currency;
 
-            if (currency == null)
-                return false;
-
-            return true;
+            return currency != null;
         }
     }
 }

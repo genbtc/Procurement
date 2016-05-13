@@ -30,7 +30,7 @@ namespace Procurement.ViewModel.Filters.ForumExport
 
         public bool Applicable(Item item)
         {
-            return item.CraftedMods != null && item.CraftedMods.Count() > 0;
+            return item.CraftedMods != null && item.CraftedMods.Any();
         }
     }
 }

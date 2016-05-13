@@ -25,10 +25,10 @@ namespace Procurement.ViewModel.Filters
             get { return "Corrupted Gems"; }
         }
 
-        public bool Applicable(POEApi.Model.Item item)
+        public bool Applicable(Item item)
         {
             Gear gear = item as Gear;
-            if (gear != null && gear.SocketedItems.Any(x => Applicable(x)))
+            if (gear != null && gear.SocketedItems.Any(Applicable))
                 return true;
 
             Gem gem = item as Gem;
