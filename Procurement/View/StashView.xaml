@@ -9,6 +9,7 @@
              mc:Ignorable="d" 
              Height="630" Width="1012" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
     <UserControl.Resources>
+        <pv:GemDistributionStringConverter x:Key="gdsconv" />
         <SolidColorBrush x:Key="TabControlNormalBorderBrush" Color="#AA9072" />
         <SolidColorBrush x:Key="ButtonNormalBackground" Color="#2D1D13" />
         <Style TargetType="{x:Type TabItem}" x:Key="NonImages">
@@ -270,7 +271,7 @@
                         <Border BorderBrush="#FF76591B" BorderThickness="2" VerticalAlignment="Top" Background="Black">
                             <ScrollViewer VerticalScrollBarVisibility="Visible" CanContentScroll="True" MaxHeight="425">
                                 <Grid>
-                                    <pv:BindableRichTextBoxString Background="Black" IsReadOnly="True" Text="{Binding Path=GemDistributionstring, Mode=OneWay}" />
+                                    <pv:BindableRichTextBox Background="Black" IsReadOnly="True" Document="{Binding Path=GemDistributionstring, Mode=OneWay, Converter={StaticResource gdsconv}}" />
                                 </Grid>
                             </ScrollViewer>
                         </Border>
