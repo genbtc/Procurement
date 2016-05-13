@@ -1,6 +1,6 @@
-﻿using POEApi.Model;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
+using POEApi.Model;
 
 namespace Procurement.ViewModel
 {

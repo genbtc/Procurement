@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Procurement.ViewModel.Recipes;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using POEApi.Model;
-using System.Windows.Controls;
+using Procurement.ViewModel.Recipes;
 
 namespace Procurement.ViewModel
 {

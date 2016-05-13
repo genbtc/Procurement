@@ -1,7 +1,4 @@
-﻿using POEApi.Model;
-using System;
-
-namespace Procurement.ViewModel.Filters.ForumExport
+﻿namespace Procurement.ViewModel.Filters.ForumExport
 {
     public class LifeFilter : ExplicitModBase
     {

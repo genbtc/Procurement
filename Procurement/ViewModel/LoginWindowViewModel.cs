@@ -5,15 +5,14 @@ using System.Linq;
 using System.Net;
 using System.Security;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using POEApi.Infrastructure;
 using POEApi.Infrastructure.Events;
 using POEApi.Model;
 using POEApi.Model.Events;
-using Procurement.View;
 using Procurement.Utility;
-using System.Windows;
+using Procurement.View;
 
 namespace Procurement.ViewModel
 {

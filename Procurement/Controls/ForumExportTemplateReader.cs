@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Reflection;
-using System.IO;
-using POEApi.Infrastructure;
 using System.ComponentModel;
+using System.IO;
+using System.Reflection;
+using POEApi.Infrastructure;
 
 namespace Procurement.Controls
 {

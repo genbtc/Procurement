@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Data;
-using POEApi.Model;
 using System.Windows.Documents;
-using Procurement.ViewModel;
 using System.Windows.Media;
-using System.Windows;
+using Procurement.ViewModel;
 
 namespace Procurement.View
 {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using POEApi.Model;
 using System.Linq;
+using POEApi.Model;
 using Procurement.ViewModel.Filters;
 using Procurement.ViewModel.Filters.ForumExport;
 

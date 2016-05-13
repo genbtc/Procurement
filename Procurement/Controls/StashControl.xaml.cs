@@ -9,8 +9,6 @@ using System.Windows.Media;
 using POEApi.Model;
 using Procurement.ViewModel;
 using Procurement.ViewModel.Filters;
-using System.Diagnostics;
-using POEApi.Infrastructure;
 
 namespace Procurement.Controls
 {

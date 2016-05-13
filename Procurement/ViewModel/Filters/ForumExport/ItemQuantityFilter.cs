@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Procurement.ViewModel.Filters
+﻿namespace Procurement.ViewModel.Filters
 {
     public class ItemQuantityFilter : StatFilter
     {

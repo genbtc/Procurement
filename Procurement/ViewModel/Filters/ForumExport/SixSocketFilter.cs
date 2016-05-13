@@ -1,6 +1,6 @@
-﻿using POEApi.Model;
-using System;
+﻿using System;
 using System.Linq;
+using POEApi.Model;
 
 namespace Procurement.ViewModel.Filters.ForumExport
 {

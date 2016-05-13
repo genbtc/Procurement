@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using POEApi.Model;
+﻿using POEApi.Model;
 
 namespace Procurement.ViewModel.Filters
 {

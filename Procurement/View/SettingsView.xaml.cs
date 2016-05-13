@@ -1,7 +1,7 @@
-﻿using System.Windows.Controls;
-using Procurement.ViewModel;
+﻿using System.Windows;
+using System.Windows.Controls;
 using POEApi.Model;
-using System.Windows;
+using Procurement.ViewModel;
 
 namespace Procurement.View
 {

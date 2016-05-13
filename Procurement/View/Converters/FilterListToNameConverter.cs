@@ -1,7 +1,7 @@
-﻿using System.Windows.Data;
-using System.Collections.Generic;
-using Procurement.ViewModel.Filters;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Data;
+using Procurement.ViewModel.Filters;
 
 namespace Procurement.View
 {

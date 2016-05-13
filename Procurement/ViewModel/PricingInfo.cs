@@ -1,7 +1,7 @@
-﻿using POEApi.Infrastructure;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Globalization;
 using System.Windows.Input;
+using POEApi.Infrastructure;
 
 namespace Procurement.ViewModel
 {

@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using POEApi.Model;
-using System;
 
 namespace Procurement.ViewModel.ForumExportVisitors
 {

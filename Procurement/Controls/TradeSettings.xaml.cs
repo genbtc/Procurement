@@ -1,6 +1,6 @@
-﻿using Procurement.ViewModel;
+﻿using System.Diagnostics;
 using System.Windows.Controls;
-using System.Diagnostics;
+using Procurement.ViewModel;
 
 namespace Procurement.Controls
 {

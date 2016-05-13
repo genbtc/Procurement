@@ -1,10 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Windows.Controls;
-using System.Windows.Input;
+﻿using System.ComponentModel;
 using Procurement.Controls;
-using Procurement.ViewModel.Filters;
 
 namespace Procurement.ViewModel
 {

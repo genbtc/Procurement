@@ -1,6 +1,6 @@
-﻿using Procurement.ViewModel;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
+using Procurement.ViewModel;
 
 namespace Procurement.Controls
 {

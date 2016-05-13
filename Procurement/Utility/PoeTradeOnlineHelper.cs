@@ -1,13 +1,13 @@
-﻿using POEApi.Infrastructure;
-using POEApi.Model;
-using System;
+﻿using System;
 using System.Collections.Specialized;
 using System.Diagnostics;
+using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Timers;
 using System.Windows;
-using System.Linq;
+using POEApi.Infrastructure;
+using POEApi.Model;
 
 namespace Procurement.Utility
 {

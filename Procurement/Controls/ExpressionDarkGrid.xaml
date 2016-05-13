@@ -426,8 +426,8 @@
                         </Trigger>
                     </ControlTemplate.Triggers>
                     <ControlTemplate.Resources>
-                        <Color x:Key="SelectedBackgroundColor"></Color>
-                    <Color x:Key="ControlMouseOverColor"></Color>
+                        <Color x:Key="SelectedBackgroundColor" />
+                        <Color x:Key="ControlMouseOverColor" />
                     </ControlTemplate.Resources>
                 </ControlTemplate>
             </Setter.Value>

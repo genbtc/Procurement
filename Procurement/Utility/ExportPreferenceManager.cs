@@ -1,10 +1,10 @@
-﻿using POEApi.Infrastructure;
-using Procurement.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
+using POEApi.Infrastructure;
+using Procurement.ViewModel;
 
 namespace Procurement.Utility
 {

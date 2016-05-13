@@ -1,4 +1,5 @@
 ﻿using POEApi.Model;
+
 namespace Procurement.ViewModel.Filters
 {
     internal class NormalRarity : RarityFilter

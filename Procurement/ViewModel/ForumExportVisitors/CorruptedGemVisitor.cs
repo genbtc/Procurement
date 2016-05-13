@@ -1,5 +1,5 @@
-﻿using Procurement.ViewModel.Filters;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Procurement.ViewModel.Filters;
 
 namespace Procurement.ViewModel.ForumExportVisitors
 {

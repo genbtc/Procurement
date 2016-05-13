@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using System.Windows.Documents;
 using System.Windows.Media;
-using POEApi.Model;
-using Procurement.ViewModel;
 using POEApi.Infrastructure;
+using POEApi.Model;
 using Procurement.Utility;
+using Procurement.ViewModel;
 
 namespace Procurement.Controls
 {

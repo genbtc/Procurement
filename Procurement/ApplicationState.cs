@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using POEApi.Model;
 using System.Runtime.InteropServices;
-using System;
+using POEApi.Model;
 using Procurement.ViewModel.Cache;
 
 namespace Procurement

@@ -6,8 +6,8 @@ using System.Windows.Data;
 using POEApi.Model;
 using Procurement.Controls;
 using Procurement.Utility;
-using Procurement.ViewModel.Filters;
 using Procurement.ViewModel;
+using Procurement.ViewModel.Filters;
 
 namespace Procurement.View
 {

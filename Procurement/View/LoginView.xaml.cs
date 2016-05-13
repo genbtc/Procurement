@@ -1,8 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using Procurement.ViewModel;
-using System.Windows.Media;
-using System;
 
 namespace Procurement.View
 {

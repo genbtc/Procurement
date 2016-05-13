@@ -1,14 +1,14 @@
-﻿using Microsoft.Win32;
-using POEApi.Infrastructure;
-using POEApi.Model;
-using Procurement.Controls;
-using Procurement.ViewModel;
-using System;
+﻿using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
+using Microsoft.Win32;
+using POEApi.Infrastructure;
+using POEApi.Model;
+using Procurement.Controls;
+using Procurement.ViewModel;
 
 namespace Procurement.Utility
 {

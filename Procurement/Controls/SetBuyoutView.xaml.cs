@@ -1,10 +1,9 @@
-﻿using POEApi.Model;
-using Procurement.ViewModel;
-using System;
-using System.Text.RegularExpressions;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using POEApi.Model;
+using Procurement.ViewModel;
 
 namespace Procurement.Controls
 {

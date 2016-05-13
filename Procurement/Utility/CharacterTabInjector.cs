@@ -1,8 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using POEApi.Infrastructure;
 using POEApi.Model;
-using System.Collections.Generic;
-using System;
 
 namespace Procurement.Utility
 {

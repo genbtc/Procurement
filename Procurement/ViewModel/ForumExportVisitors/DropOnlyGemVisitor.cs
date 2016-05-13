@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using POEApi.Model;
 using Procurement.ViewModel.Filters;
-using System.Linq;
 
 namespace Procurement.ViewModel.ForumExportVisitors
 {

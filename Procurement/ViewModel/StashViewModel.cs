@@ -2,20 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using POEApi.Infrastructure;
 using POEApi.Model;
 using Procurement.Controls;
 using Procurement.Utility;
 using Procurement.View;
 using Procurement.ViewModel.Filters;
-using System.Text;
-using POEApi.Infrastructure;
-using System.Windows.Controls.Primitives;
-using System.Threading.Tasks;
 
 namespace Procurement.ViewModel
 {

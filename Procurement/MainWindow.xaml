@@ -171,10 +171,8 @@
                 </Grid>
             </Grid>
 
-            <Grid x:Name="MainRegion" Grid.Row="1">
-                
-            </Grid>
-            
+            <Grid x:Name="MainRegion" Grid.Row="1" />
+
         </Grid>
 
         <Grid x:Name="Footer" Grid.Row="2" Margin="7,0,-7,0" Visibility="{Binding FullMode, Converter={StaticResource vc}}">

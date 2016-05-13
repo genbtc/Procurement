@@ -1,10 +1,8 @@
-﻿using POEApi.Infrastructure;
-using POEApi.Model;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Diagnostics;
 using System.Net;
 using System.Windows;
+using POEApi.Infrastructure;
 
 namespace Procurement.Utility
 {

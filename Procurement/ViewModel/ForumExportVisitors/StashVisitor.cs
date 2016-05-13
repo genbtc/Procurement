@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using POEApi.Model;
 using System.Text.RegularExpressions;
 using POEApi.Infrastructure;
+using POEApi.Model;
 
 namespace Procurement.ViewModel.ForumExportVisitors
 {

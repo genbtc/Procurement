@@ -1,9 +1,4 @@
-﻿using POEApi.Infrastructure;
-using POEApi.Model;
-using Procurement.Controls;
-using Procurement.Utility;
-using Procurement.ViewModel.ForumExportVisitors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
@@ -13,6 +8,11 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using POEApi.Infrastructure;
+using POEApi.Model;
+using Procurement.Controls;
+using Procurement.Utility;
+using Procurement.ViewModel.ForumExportVisitors;
 
 namespace Procurement.ViewModel
 {
