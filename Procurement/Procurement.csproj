@@ -94,8 +94,7 @@
     </ApplicationDefinition>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    </Compile>      
     <Compile Include="ApplicationState.cs" />
     <Compile Include="Controls\SetTabBuyoutView.xaml.cs">
       <DependentUpon>SetTabBuyoutView.xaml</DependentUpon>
@@ -152,20 +151,89 @@
     <Compile Include="Utility\StashHelper.cs" />
     <Compile Include="Utility\VersionChecker.cs" />
     <Compile Include="ViewModel\AdvancedSearchCategory.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AccurayFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CraftedModFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CurrencyFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\GearSearchFilters.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\GemLevelFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\IncreasedDamageFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\LifeLeech.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ManaLeechFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\MovementSpeed.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SixBlueSockets.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SixGreenSockets.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SixLink.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SixRedSockets.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SocketColourFilter.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\Accuracy.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\AttackSpeed.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\CastSpeed.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\CharacterAttribute.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\DamageCold.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\DamageFire.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\DamageLightning.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\IncreasedDamage.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\ItemQuantity.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\ItemRarity.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\LifeLeech.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\ManaLeech.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\MovementSpeed.cs" />
+    <Compile Include="ViewModel\Filters\1-StatFilter\PhysicalDamage.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\AllElementalResistances.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\ChaosResistance.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\ColdResistance.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\DualRes.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\FireResistance.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\LightningResistance.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\ResistanceBase.cs" />
+    <Compile Include="ViewModel\Filters\2-Resists\TripleRes.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\AllMicrotransactions.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\Buyout.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\CraftedMod.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\Currency.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\DamageTriple.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\Map.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\MapTier.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\SixBlueSockets.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\SixGreenSockets.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\SixRedSockets.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\SixSocket.cs" />
+    <Compile Include="ViewModel\Filters\0-IFilter\SocketColour.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\AllGems.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\AuraGems.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\CorruptedGem.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\CurseGem.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\DropOnlyGem.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\GemCategory.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\GemLevel.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\LeveledGem.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\PopularGems.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\QualityGem.cs" />
+    <Compile Include="ViewModel\Filters\3-Gems\SupportGems.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\CritChance.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\EnergyShield.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\GlobalCritChance.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\GlobalCritMultiplier.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\IncreasedPhysicalDamage.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\Life.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\LifeRegen.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\Mana.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\ManaRegen.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\SpellDamage.cs" />
+    <Compile Include="ViewModel\Filters\5-XHanded\OneHanded.cs" />
+    <Compile Include="ViewModel\Filters\5-XHanded\TwoHanded.cs" />
+    <Compile Include="ViewModel\Filters\5-XHanded\XHandFilter.cs" />
+    <Compile Include="ViewModel\Filters\6-Link\FiveLink.cs" />
+    <Compile Include="ViewModel\Filters\6-Link\FourLink.cs" />
+    <Compile Include="ViewModel\Filters\6-Link\LinkFilter.cs" />
+    <Compile Include="ViewModel\Filters\6-Link\SixLink.cs" />
+    <Compile Include="ViewModel\Filters\7-GearTypeFilter\Gear.cs" />
+    <Compile Include="ViewModel\Filters\7-GearTypeFilter\GearTypeFilter.cs" />
+    <Compile Include="ViewModel\Filters\8-TypeLineFilter\TypeLineFilter.cs" />
+    <Compile Include="ViewModel\Filters\8-TypeLineFilter\VaalFragment.cs" />
+    <Compile Include="ViewModel\Filters\8-TypeLineFilter\VaalUberFragment.cs" />
+    <Compile Include="ViewModel\Filters\9-RarityFilter\MagicRarity.cs" />
+    <Compile Include="ViewModel\Filters\9-RarityFilter\NormalRarity.cs" />
+    <Compile Include="ViewModel\Filters\9-RarityFilter\RareRarity.cs" />
+    <Compile Include="ViewModel\Filters\9-RarityFilter\RarityFilter.cs" />
+    <Compile Include="ViewModel\Filters\9-RarityFilter\UniqueRarity.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\AndFilter.cs" />
+    <Compile Include="ViewModel\Filters\4-ExplicitMod\ExplicitModBase.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\FilterGroup.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\IFilter.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\ItemFilter.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\OrFilter.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\OrStatFilter.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\StatFilter.cs" />
+    <Compile Include="ViewModel\Filters\BaseClasses\StatFilterBase.cs" />
+    <Compile Include="ViewModel\Filters\CategoryManager.cs" />
+    <Compile Include="ViewModel\Filters\UserSearchFilter.cs" />
     <Compile Include="ViewModel\ForumExportVisitors\CurrencyVisitor.cs" />
     <Compile Include="ViewModel\SetTabBuyoutViewModel.cs" />
     <Compile Include="ViewModel\TradeSettingsViewModel.cs" />
@@ -177,104 +245,10 @@
     <Compile Include="ViewModel\DisplayModeStrategy\NamePlusValueStrategy.cs" />
     <Compile Include="ViewModel\DisplayModeStrategy\StringFormatStrategy.cs" />
     <Compile Include="ViewModel\DisplayModeStrategy\ValuesPlusNameStrategy.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\EnergyShieldFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\IncreasedPhysicalDamageFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ManaFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ManaRegenFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CharacterAttributeFilters.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\OrStatFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\PhysicalDamageFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\StatFilterBase.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\TypeLineFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\VaalFragmentFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\VaalUberFragmentFilter.cs" />
     <Compile Include="ViewModel\ForumExportVisitors\TypeLineVisitor.cs" />
     <Compile Include="ViewModel\PricingInfo.cs" />
     <Compile Include="ViewModel\SetBuyoutViewModel.cs" />
     <Compile Include="ViewModel\TabInfo.cs" />
-    <Compile Include="ViewModel\Filters\FilterGroup.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AllElementalResistances.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AllGemsFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AllMicrotransactions.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AndFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AttackSpeed.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\AuraGemsFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\BuyoutFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CastSpeed.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CategoryManager.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\ChaosResistance.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ColdResistance.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CorruptedGemFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CritChanceFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\GlobalCritMultiplierFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\CurseGemFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\DamageCold.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\DamageFire.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\DamageLightning.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\DamageTriple.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\DropOnlyGemFilter.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\DualRes.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ExplicitModBase.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\FireResistance.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\FiveLink.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\FourLink.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\GearTypeFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\GemCategoryFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\GlobalCritChanceFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ItemQuantityFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\ItemRarityFilter.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\LeveledGemFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\LifeFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\LifeRegenFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\LightningResistance.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\Link.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\MagicRarity.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\MapLevelFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\OneHandedFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\OrFilter.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\PopularGemsFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\RarityFilter.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\QualityGemFilter.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\RareRarity.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\ResistanceBase.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SixSocketFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SpellDamageFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\StatFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\SupportGemsFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\TripleResistance.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\UniqueRarity.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\NormalRarity.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ViewModel\Filters\ForumExport\XHandFilter.cs" />
-    <Compile Include="ViewModel\Filters\IFilter.cs" />
-    <Compile Include="ViewModel\Filters\ItemFilter.cs" />
-    <Compile Include="ViewModel\Filters\ForumExport\TwoHandedFilter.cs" />
-    <Compile Include="ViewModel\Filters\UserSearchFilter.cs" />
     <Compile Include="ViewModel\ForumExportViewModel.cs" />
     <Compile Include="ViewModel\ForumExportVisitors\AllGemVisitor.cs" />
     <Compile Include="ViewModel\ForumExportVisitors\CorruptedGemVisitor.cs" />
@@ -338,8 +312,8 @@
     </Compile>
     <Compile Include="View\Converters\CharacterToImageConverter.cs" />
     <Compile Include="View\Converters\CharacterToLevelConverter.cs" />
-    <Compile Include="View\Converters\GemDistributionStringConverter.cs" />
     <Compile Include="View\Converters\FilterListToNameConverter.cs" />
+    <Compile Include="View\Converters\GemDistributionStringConverter.cs" />
     <Compile Include="View\Converters\ItemDisplayConverter.cs" />
     <Compile Include="View\Converters\ItemExplicitModsToFormattedRunConverter.cs" />
     <Compile Include="View\Converters\ItemPropertyToFormattedRunConverter.cs" />
@@ -378,9 +352,7 @@
     <Compile Include="View\VisualTreeHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -684,6 +656,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

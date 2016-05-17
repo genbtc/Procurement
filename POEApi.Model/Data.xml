@@ -2,6 +2,7 @@
 <Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Data.xsd">
   <GearBaseTypes>
     <GearBaseType name="Ring">
+      <Item name="Golden Hoop"/>
       <Item name="Iron Ring"/>
       <Item name="Coral Ring"/>
       <Item name="Paua Ring"/>
@@ -15,6 +16,7 @@
       <Item name="Amethyst Ring"/>
       <Item name="Two-Stone Ring"/>
       <Item name="Unset Ring"/>
+      <Item name="Jet Ring"/>
     </GearBaseType>
     <GearBaseType name="Amulet">
       <Item name="Paua Amulet"/>
@@ -27,6 +29,36 @@
       <Item name="Agate Amulet"/>
       <Item name="Turquoise Amulet"/>
       <Item name="Citrine Amulet"/>
+      <Item name="Ruby Amulet"/>
+      <Item name="Jet Amulet"/>
+      <Item name="Black Maw Talisman"/>
+      <Item name="Bonespire Talisman"/>
+      <Item name="Ashscale Talisman"/>
+      <Item name="Lone Antler Talisman"/>
+      <Item name="Deep One Talisman"/>
+      <Item name="Breakrib Talisman"/>
+      <Item name="Deadhand Talisman"/>
+      <Item name="Undying Flesh Talisman"/>
+      <Item name="Rot Head Talisman"/>
+      <Item name="Mandible Talisman"/>
+      <Item name="Chrysalis Talisman"/>
+      <Item name="Writhing Talisman"/>
+      <Item name="Hexclaw Talisman"/>
+      <Item name="Primal Skull Talisman"/>
+      <Item name="Wereclaw Talisman"/>
+      <Item name="Splitnewt Talisman"/>
+      <Item name="Clutching Talisman"/>
+      <Item name="Avian Twins Talisman"/>
+      <Item name="Fangjaw Talisman"/>
+      <Item name="Horned Talisman"/>
+      <Item name="Spinefuse Talisman"/>
+      <Item name="Three Rat Talisman"/>
+      <Item name="Monkey Twins Talisman"/>
+      <Item name="Longtooth Talisman"/>
+      <Item name="Rotfeather Talisman"/>
+      <Item name="Monkey Paw Talisman"/>
+      <Item name="Three Hands Talisman"/>
+      <Item name="Greatwolf Talisman"/>
     </GearBaseType>
     <GearBaseType name="Helmet">
       <Item name="Iron Hat"/>
@@ -40,7 +72,6 @@
       <Item name="Ezomyte Burgonet"/>
       <Item name="Royal Burgonet"/>
       <Item name="Eternal Burgonet"/>
-
       <Item name="Leather Cap"/>
       <Item name="Tricorne"/>
       <Item name="Leather Hood"/>
@@ -51,7 +82,6 @@
       <Item name="Silken Hood"/>
       <Item name="Sinner Tricorne"/>
       <Item name="Lion Pelt"/>
-
       <Item name="Vine Circlet"/>
       <Item name="Iron Circlet"/>
       <Item name="Torture Cage"/>
@@ -63,7 +93,6 @@
       <Item name="Solaris Circlet"/>
       <Item name="Mind Cage"/>
       <Item name="Hubris Circlet"/>
-
       <Item name="Battered Helm"/>
       <Item name="Visored Sallet"/>
       <Item name="Gilded Sallet"/>
@@ -74,7 +103,6 @@
       <Item name="Pig-Faced Bascinet"/>
       <Item name="Nightmare Bascinet"/>
       <Item name="Sallet"/>
-
       <Item name="Rusted Coif"/>
       <Item name="Soldier Helmet"/>
       <Item name="Great Helmet"/>
@@ -85,7 +113,6 @@
       <Item name="Magistrate Crown"/>
       <Item name="Prophet Crown"/>
       <Item name="Praetor Crown"/>
-
       <Item name="Scare Mask"/>
       <Item name="Plague Mask"/>
       <Item name="Iron Mask"/>
@@ -97,6 +124,7 @@
       <Item name="Harlequin Mask"/>
       <Item name="Vaal Mask"/>
       <Item name="Deicide Mask"/>
+      <Item name="Golden Wreath"/>
     </GearBaseType>
     <GearBaseType name="Chest">
       <Item name="Plate Vest"/>
@@ -116,7 +144,7 @@
       <Item name="Astral Plate"/>
       <Item name="Gladiator Plate"/>
       <Item name="Glorious Plate"/>
-
+      <Item name="Kaom's Plate"/>
       <Item name="Shabby Jerkin"/>
       <Item name="Strapped Leather"/>
       <Item name="Buckskin Tunic"/>
@@ -135,7 +163,6 @@
       <Item name="Zodiac Leather"/>
       <Item name="Assassin's Garb"/>
       <Item name="Sacrificial Garb"/>
-
       <Item name="Simple Robe"/>
       <Item name="Silken Vest"/>
       <Item name="Scholar's Robe"/>
@@ -153,7 +180,6 @@
       <Item name="Occultist's Vestment"/>
       <Item name="Widowsilk Robe"/>
       <Item name="Vaal Regalia"/>
-
       <Item name="Scale Vest"/>
       <Item name="Light Brigandine"/>
       <Item name="Scale Doublet"/>
@@ -171,7 +197,6 @@
       <Item name="Full Dragonscale"/>
       <Item name="General's Brigandine"/>
       <Item name="Triumphant Lamellar"/>
-
       <Item name="Chainmail Vest"/>
       <Item name="Chainmail Tunic"/>
       <Item name="Ringmail Coat"/>
@@ -189,7 +214,6 @@
       <Item name="Elegant Ringmail"/>
       <Item name="Saint's Hauberk"/>
       <Item name="Saintly Chainmail"/>
-
       <Item name="Padded Vest"/>
       <Item name="Oiled Vest"/>
       <Item name="Padded Jacket"/>
@@ -207,6 +231,7 @@
       <Item name="Blood Raiment"/>
       <Item name="Sadist Garb"/>
       <Item name="Carnal Armour"/>
+      <Item name="Golden Mantle"/>
     </GearBaseType>
     <GearBaseType name="Belt">
       <Item name="Rustic Sash"/>
@@ -215,6 +240,7 @@
       <Item name="Heavy Belt"/>
       <Item name="Studded Belt"/>
       <Item name="Cloth Belt"/>
+      <Item name="Golden Obi"/>
     </GearBaseType>
     <GearBaseType name="Flask">
       <Item name="Small Life Flask"/>
@@ -227,7 +253,8 @@
       <Item name="Sacred Life Flask"/>
       <Item name="Hallowed Life Flask"/>
       <Item name="Sanctified Life Flask"/>
-
+      <Item name="Divine Life Flask"/>
+      <Item name="Eternal Life Flask"/>
       <Item name="Small Mana Flask"/>
       <Item name="Medium Mana Flask"/>
       <Item name="Large Mana Flask"/>
@@ -238,14 +265,14 @@
       <Item name="Sacred Mana Flask"/>
       <Item name="Hallowed Mana Flask"/>
       <Item name="Sanctified Mana Flask"/>
-
+      <Item name="Divine Mana Flask"/>
+      <Item name="Eternal Mana Flask"/>
       <Item name="Small Hybrid Flask"/>
       <Item name="Medium Hybrid Flask"/>
       <Item name="Large Hybrid Flask"/>
       <Item name="Colossal Hybrid Flask"/>
       <Item name="Sacred Hybrid Flask"/>
       <Item name="Hallowed Hybrid Flask"/>
-
       <Item name="Quicksilver Flask"/>
       <Item name="Ruby Flask"/>
       <Item name="Sapphire Flask"/>
@@ -360,7 +387,6 @@
       <Item name="Goliath Gauntlets"/>
       <Item name="Vaal Gauntlets"/>
       <Item name="Titan Gauntlets"/>
-
       <Item name="Rawhide Gloves"/>
       <Item name="Goathide Gloves"/>
       <Item name="Deerskin Gloves"/>
@@ -370,7 +396,6 @@
       <Item name="Shagreen Gloves"/>
       <Item name="Stealth Gloves"/>
       <Item name="Slink Gloves"/>
-
       <Item name="Wool Gloves"/>
       <Item name="Velvet Gloves"/>
       <Item name="Silk Gloves"/>
@@ -380,16 +405,14 @@
       <Item name="Conjurer Gloves"/>
       <Item name="Arcanist Gloves"/>
       <Item name="Sorcerer Gloves"/>
-
       <Item name="Fishscale Gauntlets"/>
       <Item name="Ironscale Gauntlets"/>
       <Item name="Bronzescale Gauntlets"/>
       <Item name="Steelscale Gauntlets"/>
       <Item name="Serpentscale Gauntlets"/>
       <Item name="Wyrmscale Gauntlets"/>
-      <Item name="hydrascale Gauntlets"/>
+      <Item name="Hydrascale Gauntlets"/>
       <Item name="Dragonscale Gauntlets"/>
-
       <Item name="Chain Gloves"/>
       <Item name="Ringmail Gloves"/>
       <Item name="Mesh Gloves"/>
@@ -398,7 +421,6 @@
       <Item name="Soldier Gloves"/>
       <Item name="Legion Gloves"/>
       <Item name="Crusader Gloves"/>
-
       <Item name="Wrapped Mitts"/>
       <Item name="Strapped Mitts"/>
       <Item name="Clasped Mitts"/>
@@ -407,6 +429,7 @@
       <Item name="Carnal Mitts"/>
       <Item name="Assassin's Mitts"/>
       <Item name="Murder Mitts"/>
+      <Item name="Golden Bracers"/>
     </GearBaseType>
     <GearBaseType name="Boots">
       <Item name="Iron Greaves"/>
@@ -418,7 +441,7 @@
       <Item name="Goliath Greaves"/>
       <Item name="Vaal Greaves"/>
       <Item name="Titan Greaves"/>
-
+      <Item name="Kaom's Greaves"/>
       <Item name="Rawhide Boots"/>
       <Item name="Goathide Boots"/>
       <Item name="Deerskin Boots"/>
@@ -428,7 +451,6 @@
       <Item name="Shagreen Boots"/>
       <Item name="Stealth Boots"/>
       <Item name="Slink Boots"/>
-
       <Item name="Wool Shoes"/>
       <Item name="Velvet Slippers"/>
       <Item name="Silk Slippers"/>
@@ -438,7 +460,6 @@
       <Item name="Conjurer Boots"/>
       <Item name="Arcanist Slippers"/>
       <Item name="Sorcerer Boots"/>
-
       <Item name="Leatherscale Boots"/>
       <Item name="Ironscale Boots"/>
       <Item name="Bronzescale Boots"/>
@@ -447,7 +468,6 @@
       <Item name="Wyrmscale Boots"/>
       <Item name="Hydrascale Boots"/>
       <Item name="Dragonscale Boots"/>
-
       <Item name="Chain Boots"/>
       <Item name="Ringmail Boots"/>
       <Item name="Mesh Boots"/>
@@ -456,7 +476,6 @@
       <Item name="Soldier Boots"/>
       <Item name="Legion Boots"/>
       <Item name="Crusader Boots"/>
-
       <Item name="Wrapped Boots"/>
       <Item name="Strapped Boots"/>
       <Item name="Clasped Boots"/>
@@ -466,6 +485,8 @@
       <Item name="Carnal Boots"/>
       <Item name="Assassin's Boots"/>
       <Item name="Murder Boots"/>
+      <Item name="Golden Caligae"/>
+      <Item name="Avian Slippers"/>
     </GearBaseType>
     <GearBaseType name="Axe">
       <Item name="Rusted Hatchet"/>
@@ -476,6 +497,7 @@
       <Item name="Arming Axe"/>
       <Item name="Decorative Axe"/>
       <Item name="Spectral Axe"/>
+      <Item name="Etched Hatchet"/>
       <Item name="Jasper Axe"/>
       <Item name="Tomahawk"/>
       <Item name="Wrist Chopper"/>
@@ -483,6 +505,7 @@
       <Item name="Chest Splitter"/>
       <Item name="Ceremonial Axe"/>
       <Item name="Wraith Axe"/>
+      <Item name="Engraved Hatchet"/>
       <Item name="Karui Axe"/>
       <Item name="Siege Axe"/>
       <Item name="Reaver Axe"/>
@@ -490,6 +513,7 @@
       <Item name="Vaal Hatchet"/>
       <Item name="Royal Axe"/>
       <Item name="Infernal Axe"/>
+      <Item name="Runic Hatchet"/>
 
       <Item name="Stone Axe"/>
       <Item name="Jade Chopper"/>
@@ -499,20 +523,22 @@
       <Item name="Gilded Axe"/>
       <Item name="Shadow Axe"/>
       <Item name="Jasper Chopper"/>
+      <Item name="Dagger Axe"/>
       <Item name="Timber Axe"/>
       <Item name="Headsman Axe"/>
       <Item name="Labrys"/>
       <Item name="Noble Axe"/>
       <Item name="Abyssal Axe"/>
+      <Item name="Talon Axe"/>
       <Item name="Karui Chopper"/>
       <Item name="Sundering Axe"/>
       <Item name="Ezomyte Axe"/>
       <Item name="Vaal Axe"/>
       <Item name="Despot Axe"/>
       <Item name="Void Axe"/>
-      <Item name="Runic Hatchet"/>
       <Item name="Fleshripper"/>
     </GearBaseType>
+
     <GearBaseType name="Claw">
       <Item name="Nailed Fist"/>
       <Item name="Sharktooth Claw"/>
@@ -522,6 +548,7 @@
       <Item name="Timeworn Claw"/>
       <Item name="Sparkling Claw"/>
       <Item name="Fright Claw"/>
+      <Item name="Double Claw"/>
       <Item name="Thresher Claw"/>
       <Item name="Gouger"/>
       <Item name="Tiger's Paw"/>
@@ -529,6 +556,7 @@
       <Item name="Prehistoric Claw"/>
       <Item name="Noble Claw"/>
       <Item name="Eagle Claw"/>
+      <Item name="Twin Claw"/>
       <Item name="Great White Claw"/>
       <Item name="Throat Stabber"/>
       <Item name="Hellion's Paw"/>
@@ -547,6 +575,7 @@
       <Item name="Bone Bow"/>
       <Item name="Royal Bow"/>
       <Item name="Death Bow"/>
+      <Item name="Reflex Bow"/>
       <Item name="Grove Bow"/>
       <Item name="Decurve Bow"/>
       <Item name="Compound Bow"/>
@@ -554,6 +583,7 @@
       <Item name="Ivory Bow"/>
       <Item name="Highborn Bow"/>
       <Item name="Decimation Bow"/>
+      <Item name="Steelwood Bow"/>
       <Item name="Thicket Bow"/>
       <Item name="Citadel Bow"/>
       <Item name="Ranger Bow"/>
@@ -572,6 +602,7 @@
       <Item name="Copper Kris"/>
       <Item name="Skean"/>
       <Item name="Imp Dagger"/>
+      <Item name="Prong Dagger"/>
       <Item name="Flaying Knife"/>
       <Item name="Butcher Knife"/>
       <Item name="Poignard"/>
@@ -579,6 +610,7 @@
       <Item name="Golden Kris"/>
       <Item name="Royal Skean"/>
       <Item name="Fiend Dagger"/>
+      <Item name="Trisula"/>
       <Item name="Gutting Knife"/>
       <Item name="Slaughter Knife"/>
       <Item name="Ambusher"/>
@@ -597,6 +629,7 @@
       <Item name="Bladed Mace"/>
       <Item name="Ceremonial Mace"/>
       <Item name="Dream Mace"/>
+      <Item name="Wyrm Mace"/>
       <Item name="Petrified Club"/>
       <Item name="Barbed Club"/>
       <Item name="Rock Breaker"/>
@@ -604,6 +637,7 @@
       <Item name="Flanged Mace"/>
       <Item name="Ornate Mace"/>
       <Item name="Phantom Mace"/>
+      <Item name="Dragon Mace"/>
       <Item name="Ancestral Club"/>
       <Item name="Tenderizer"/>
       <Item name="Gavel"/>
@@ -611,28 +645,30 @@
       <Item name="Pernarch"/>
       <Item name="Auric Mace"/>
       <Item name="Nightmare Mace"/>
+      <Item name="Behemoth Mace"/>
+      <Item name="Sambar Sceptre" comment="actually a mace"/>
 
       <Item name="Driftwood Maul"/>
       <Item name="Tribal Maul"/>
       <Item name="Mallet"/>
       <Item name="Sledgehammer"/>
-      <Item name="Spiked Maul"/>
+      <Item name="Jagged Maul"/>
       <Item name="Brass Maul"/>
       <Item name="Fright Maul"/>
+      <Item name="Morning Star"/>
       <Item name="Totemic Maul"/>
       <Item name="Great Mallet"/>
       <Item name="Steelhead"/>
       <Item name="Spiny Maul"/>
       <Item name="Plated Maul"/>
       <Item name="Dread Maul"/>
+      <Item name="Solar Maul"/>
       <Item name="Karui Maul"/>
       <Item name="Colossus Mallet"/>
       <Item name="Piledriver"/>
       <Item name="Meatgrinder"/>
       <Item name="Imperial Maul"/>
       <Item name="Terror Maul"/>
-      <Item name="Sambar Sceptre"/>
-      <Item name="Behemoth Mace"/>
       <Item name="Coronal Maul"/>
     </GearBaseType>
     <GearBaseType name="Quiver">
@@ -641,7 +677,6 @@
       <Item name="Conductive Quiver"/>
       <Item name="Heavy Quiver"/>
       <Item name="Light Quiver"/>
-
       <Item name="Serrated Arrow Quiver"/>
       <Item name="Two-Point Arrow Quiver"/>
       <Item name="Sharktooth Arrow Quiver"/>
@@ -650,6 +685,7 @@
       <Item name="Broadhead Arrow Quiver"/>
       <Item name="Penetrating Arrow Quiver"/>
       <Item name="Spike-Point Arrow Quiver"/>
+      <Item name="Serrated Arrow Quiver"/>
     </GearBaseType>
     <GearBaseType name="Sceptre">
       <Item name="Driftwood Sceptre"/>
@@ -660,6 +696,7 @@
       <Item name="Ochre Sceptre"/>
       <Item name="Ritual Sceptre"/>
       <Item name="Shadow Sceptre"/>
+      <Item name="Horned Sceptre"/>
       <Item name="Grinning Fetish"/>
       <Item name="Sekhem"/>
       <Item name="Crystal Sceptre"/>
@@ -667,6 +704,7 @@
       <Item name="Blood Sceptre"/>
       <Item name="Royal Sceptre"/>
       <Item name="Abyssal Sceptre"/>
+      <Item name="Stag Sceptre"/>
       <Item name="Karui Sceptre"/>
       <Item name="Tyrant's Sekhem"/>
       <Item name="Opal Sceptre"/>
@@ -675,6 +713,7 @@
       <Item name="Vaal Sceptre"/>
       <Item name="Void Sceptre"/>
     </GearBaseType>
+
     <GearBaseType name="Staff">
       <Item name="Gnarled Branch"/>
       <Item name="Primitive Staff"/>
@@ -683,12 +722,14 @@
       <Item name="Coiled Staff"/>
       <Item name="Royal Staff"/>
       <Item name="Vile Staff"/>
+      <Item name="Crescent Staff"/>
       <Item name="Woodful Staff"/>
       <Item name="Quarterstaff"/>
       <Item name="Military Staff"/>
       <Item name="Serpentine Staff"/>
       <Item name="Highborn Staff"/>
       <Item name="Foul Staff"/>
+      <Item name="Moon Staff"/>
       <Item name="Primordial Staff"/>
       <Item name="Lathi"/>
       <Item name="Ezomyte Staff"/>
@@ -706,6 +747,7 @@
       <Item name="Ancient Sword"/>
       <Item name="Elegant Sword"/>
       <Item name="Dusk Blade"/>
+      <Item name="Hook Sword"/>
       <Item name="Variscite Blade"/>
       <Item name="Cutlass"/>
       <Item name="Baselard"/>
@@ -713,6 +755,7 @@
       <Item name="Elder Sword"/>
       <Item name="Graceful Sword"/>
       <Item name="Twilight Blade"/>
+      <Item name="Grappler"/>
       <Item name="Gemstone Sword"/>
       <Item name="Corsair Sword"/>
       <Item name="Gladius"/>
@@ -720,7 +763,7 @@
       <Item name="Vaal Blade"/>
       <Item name="Eternal Sword"/>
       <Item name="Midnight Blade"/>
-
+      <Item name="Tiger Hook"/>
       <Item name="Rusted Spike"/>
       <Item name="Whalebone Rapier"/>
       <Item name="Battered Foil"/>
@@ -729,6 +772,7 @@
       <Item name="Antique Rapier"/>
       <Item name="Elegant Foil"/>
       <Item name="Thorn Rapier"/>
+      <Item name="Smallsword"/>
       <Item name="Wyrmbone Rapier"/>
       <Item name="Burnished Foil"/>
       <Item name="Estoc"/>
@@ -736,6 +780,7 @@
       <Item name="Primeval Rapier"/>
       <Item name="Fancy Foil"/>
       <Item name="Apex Rapier"/>
+      <Item name="Courtesan Sword"/>
       <Item name="Dragonbone Rapier"/>
       <Item name="Tempered Foil"/>
       <Item name="Pecoraro"/>
@@ -743,6 +788,7 @@
       <Item name="Vaal Rapier"/>
       <Item name="Jewelled Foil"/>
       <Item name="Harpy Rapier"/>
+      <Item name="Dragoon Sword"/>
 
       <Item name="Corroded Blade"/>
       <Item name="Longsword"/>
@@ -751,12 +797,14 @@
       <Item name="Etched Greatsword"/>
       <Item name="Ornate Sword"/>
       <Item name="Spectral Sword"/>
+      <Item name="Curved Blade"/>
       <Item name="Butcher Sword"/>
       <Item name="Footman Sword"/>
       <Item name="Highland Blade"/>
       <Item name="Engraved Greatsword"/>
       <Item name="Tiger Sword"/>
       <Item name="Wraith Sword"/>
+      <Item name="Lithe Blade"/>
       <Item name="Headman's Sword"/>
       <Item name="Reaver Sword"/>
       <Item name="Ezomyte Blade"/>
@@ -764,9 +812,6 @@
       <Item name="Lion Sword"/>
       <Item name="Infernal Sword"/>
       <Item name="Exquisite Blade"/>
-      <Item name="Tiger Hook"/>
-      <Item name="Dragoon Sword"/>
-      <Item name="Grappler"/>
     </GearBaseType>
     <GearBaseType name="Shield">
       <Item name="Splintered Tower Shield"/>
@@ -786,7 +831,6 @@
       <Item name="Ezomyte Tower Shield"/>
       <Item name="Colossal Tower Shield"/>
       <Item name="Pinnacle Tower Shield"/>
-
       <Item name="Goathide Buckler"/>
       <Item name="Pine Buckler"/>
       <Item name="Painted Buckler"/>
@@ -803,7 +847,6 @@
       <Item name="Vaal Buckler"/>
       <Item name="Crusader Buckler"/>
       <Item name="Imperial Buckler"/>
-
       <Item name="Twig Spirit Shield"/>
       <Item name="Yew Spirit Shield"/>
       <Item name="Bone Spirit Shield"/>
@@ -816,11 +859,10 @@
       <Item name="Chiming Spirit Shield"/>
       <Item name="Thorium Spirit Shield"/>
       <Item name="Lacewood Spirit Shield"/>
-      <Item name="Fossilized Spirit Shield"/>
+      <Item name="Fossilised Spirit Shield"/>
       <Item name="Vaal Spirit Shield"/>
       <Item name="Harmonic Spirit Shield"/>
       <Item name="Titanium Spirit Shield"/>
-
       <Item name="Rotted Round Shield"/>
       <Item name="Fir Round Shield"/>
       <Item name="Studded Round Shield"/>
@@ -834,13 +876,12 @@
       <Item name="Spiny Round Shield"/>
       <Item name="Cardinal Round Shield"/>
       <Item name="Elegant Round Shield"/>
-
       <Item name="Plank Kite Shield"/>
       <Item name="Linden Kite Shield"/>
       <Item name="Reinforced Kite Shield"/>
       <Item name="Layered Kite Shield"/>
       <Item name="Ceremonial Kite Shield"/>
-      <Item name="Etched Shield"/>
+      <Item name="Etched Kite Shield"/>
       <Item name="Steel Kite Shield"/>
       <Item name="Laminated Kite Shield"/>
       <Item name="Angelic Kite Shield"/>
@@ -848,20 +889,20 @@
       <Item name="Champion Kite Shield"/>
       <Item name="Mosaic Kite Shield"/>
       <Item name="Archon Kite Shield"/>
-
       <Item name="Spiked Bundle"/>
       <Item name="Driftwood Spiked Shield"/>
-      <Item name="Alloyed Spike Shield"/>
-      <Item name="Burnished Spike Shield"/>
+      <Item name="Alloyed Spiked Shield"/>
+      <Item name="Burnished Spiked Shield"/>
       <Item name="Ornate Spiked Shield"/>
       <Item name="Redwood Spiked Shield"/>
       <Item name="Compound Spiked Shield"/>
       <Item name="Polished Spiked Shield"/>
       <Item name="Sovereign Spiked Shield"/>
-      <Item name="Alder Spike Shield"/>
+      <Item name="Alder Spiked Shield"/>
       <Item name="Ezomyte Spiked Shield"/>
       <Item name="Mirrored Spiked Shield"/>
       <Item name="Supreme Spiked Shield"/>
+      <Item name="Golden Flame"/>
     </GearBaseType>
     <GearBaseType name="Wand">
       <Item name="Driftwood Wand"/>
@@ -870,11 +911,13 @@
       <Item name="Quartz Wand"/>
       <Item name="Spiraled Wand"/>
       <Item name="Sage Wand"/>
+      <Item name="Pagan Wand"/>
       <Item name="Faun's Horn"/>
       <Item name="Engraved Wand"/>
       <Item name="Crystal Wand"/>
       <Item name="Serpent Wand"/>
       <Item name="Omen Wand"/>
+      <Item name="Heathen Wand"/>
       <Item name="Demon's Horn"/>
       <Item name="Imbued Wand"/>
       <Item name="Opal Wand"/>
@@ -882,91 +925,137 @@
       <Item name="Prophecy Wand"/>
       <Item name="Profane Wand"/>
     </GearBaseType>
-
     <GearBaseType name="DivinationCard">
+      <Item name="A Mother's Parting Gift"/>
       <Item name="Abandoned Wealth"/>
+      <Item name="The Aesthete"/>
+      <Item name="Anarchy's Price"/>
+      <Item name="The Arena Champion"/>
+      <Item name="The Artist"/>
+      <Item name="Assassin's Favour"/>
+      <Item name="Audacity"/>
       <Item name="The Avenger"/>
       <Item name="The Battle Born"/>
+      <Item name="The Betrayal"/>
       <Item name="Birth of the Three"/>
+      <Item name="Blind Venture"/>
+      <Item name="The Body"/>
+      <Item name="Bowyer's Dream"/>
       <Item name="The Brittle Emperor"/>
       <Item name="The Carrion Crow"/>
+      <Item name="The Cartographer"/>
       <Item name="The Cataclysm"/>
+      <Item name="The Catalyst"/>
       <Item name="The Celestial Justicar"/>
       <Item name="The Chains that Bind"/>
       <Item name="Chaotic Disposition"/>
+      <Item name="The Conduit"/>
       <Item name="Coveted Possession"/>
+      <Item name="The Dapper Prodigy"/>
       <Item name="The Dark Mage"/>
+      <Item name="Death"/>
+      <Item name="The Demoness"/>
       <Item name="The Doctor"/>
+      <Item name="Doedre's Madness"/>
+      <Item name="The Doppelganger"/>
+      <Item name="The Dragon"/>
+      <Item name="The Dragon's Heart"/>
       <Item name="The Drunken Aristocrat"/>
+      <Item name="Earth Drinker"/>
       <Item name="Emperor's Luck"/>
+      <Item name="The Encroaching Darkness"/>
+      <Item name="The Enlightened"/>
+      <Item name="The Ethereal"/>
       <Item name="The Explorer"/>
       <Item name="The Feast"/>
       <Item name="The Fiend"/>
+      <Item name="The Fletcher"/>
+      <Item name="The Flora's Gift"/>
+      <Item name="The Fox"/>
       <Item name="The Gambler"/>
       <Item name="The Gemcutter"/>
       <Item name="Gemcutter's Promise"/>
+      <Item name="The Gentleman"/>
+      <Item name="Gift of the Gemling Queen"/>
       <Item name="The Gladiator"/>
+      <Item name="Glimmer of Hope"/>
+      <Item name="Grave Knowledge"/>
+      <Item name="Her Mask"/>
       <Item name="The Hermit"/>
       <Item name="The Hoarder"/>
       <Item name="Hope"/>
-      <Item name="The Hunger"/>
+      <Item name="House of Mirrors"/>
+      <Item name="Hubris"/>
       <Item name="Humility"/>
+      <Item name="The Hunger"/>
+      <Item name="Hunter's Resolve"/>
+      <Item name="Hunter's Reward"/>
       <Item name="The Incantation"/>
+      <Item name="The Inoculated"/>
       <Item name="The Inventor"/>
       <Item name="Jack in the Box"/>
+      <Item name="The Jester"/>
+      <Item name="The King's Blade"/>
       <Item name="The King's Heart"/>
       <Item name="Lantador's Lost Love"/>
-      <Item name="The Lover"/>
-      <Item name="Lucky Connections"/>
-      <Item name="The Metalsmith's Gift"/>
-      <Item name="The Pact"/>
-      <Item name="The Poet"/>
-      <Item name="Rain of Chaos"/>
-      <Item name="The Road to Power"/>
-      <Item name="The Scarred Meadow"/>
-      <Item name="The Scholar"/>
-      <Item name="The Summoner"/>
-      <Item name="The Sun"/>
-      <Item name="Three Faces in the Dark"/>
-      <Item name="Time-Lost Relic"/>
-      <Item name="The Union"/>
-      <Item name="Vinia's Token"/>
-      <Item name="The Warden"/>
-      <Item name="The Watcher"/>
-      <Item name="The Wind"/>
-      <Item name="The Siren"/>
-      <Item name="The Betrayal"/>
-      <Item name="The Wrath"/>
-      <Item name="The Artist"/>
-      <Item name="Doedre's Madness"/>
-      <Item name="The Encroaching Darkness"/>
-      <Item name="The Flora's Gift"/>
-      <Item name="The King's Blade"/>
+      <Item name="Last Hope"/>
       <Item name="The Last One Standing"/>
+      <Item name="The Lich"/>
+      <Item name="The Lion"/>
+      <Item name="The Lord in Black"/>
+      <Item name="Lost Worlds"/>
+      <Item name="The Lover"/>
+      <Item name="Loyalty"/>
+      <Item name="Lucky Connections"/>
+      <Item name="The Mercenary"/>
+      <Item name="Merciless Armament"/>
+      <Item name="The Metalsmith's Gift"/>
+      <Item name="The Offering"/>
       <Item name="The One With All"/>
       <Item name="The Pack Leader"/>
-      <Item name="The Spoiled Prince"/>
-      <Item name="Assassin's Favour"/>
-      <Item name="Audacity"/>
-      <Item name="Hunter's Resolve"/>
+      <Item name="The Pact"/>
+      <Item name="The Poet"/>
       <Item name="Pride Before the Fall"/>
-      <Item name="Scholar of the Seas"/>
-      <Item name="Lantador's Lost Love"/>
-      <Item name="Loyalty"/>
-      <Item name="The Inoculated"/>
-      <Item name="The Tower"/>
-      <Item name="The Vast"/>
-      <Item name="The Twins"/>
-      <Item name="The Catalyst"/>
-      <Item name="The Doppelganger"/>
-      <Item name ="Merciless Armament"/>
-      <Item name="Earth Drinker"/>
-      <Item name="Enlightened"/>
-      <Item name="Her Mask"/>
-      <Item name="Treasure Hunter"/>
-      <Item name="Grave Knowledge"/>
+      <Item name="Prosperity"/>
+      <Item name="The Queen"/>
+      <Item name="The Rabid Rhoa"/>
+      <Item name="Rain of Chaos"/>
+      <Item name="Rats"/>
       <Item name="The Risk"/>
+      <Item name="The Road to Power"/>
+      <Item name="The Scarred Meadow"/>
+      <Item name="Scholar of the Seas"/>
+      <Item name="The Scholar"/>
       <Item name="The Sigil"/>
+      <Item name="The Siren"/>
+      <Item name="The Soul"/>
+      <Item name="The Spoiled Prince"/>
+      <Item name="The Summoner"/>
+      <Item name="The Sun"/>
+      <Item name="The Surgeon"/>
+      <Item name="The Surveyor"/>
+      <Item name="The Survivalist"/>
+      <Item name="The Thaumaturgist"/>
+      <Item name="Three Faces in the Dark"/>
+      <Item name="Time-Lost Relic"/>
+      <Item name="The Tower"/>
+      <Item name="The Traitor"/>
+      <Item name="Tranquillity"/>
+      <Item name="Treasure Hunter"/>
+      <Item name="The Trial"/>
+      <Item name="Turn the Other Cheek"/>
+      <Item name="The Twins"/>
+      <Item name="The Union"/>
+      <Item name="The Vast"/>
+      <Item name="Vinia's Token"/>
+      <Item name="Volatile Power"/>
+      <Item name="The Warden"/>
+      <Item name="The Warlord"/>
+      <Item name="The Watcher"/>
+      <Item name="Wealth and Power"/>
+      <Item name="The Wind"/>
+      <Item name="The Wolf's Shadow"/>
+      <Item name="The Wrath"/>
     </GearBaseType>
   </GearBaseTypes>
 </Data>

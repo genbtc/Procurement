@@ -46,8 +46,8 @@ namespace POEApi.Transport
         private RequestThrottle()
         {
             ThrottleWindowTime = new TimeSpan(0, 0, 0, 60);
-            ThrottleWindowCount = 60;
-            MaxPendingRequests = 60;
+            ThrottleWindowCount = 45;
+            MaxPendingRequests = 45;
         }
 
         public static RequestThrottle Instance

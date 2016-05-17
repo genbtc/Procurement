@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Settings.xsd">
   <Ratios>
-    <Orb type="Mirror" OrbAmount="1" ChaosAmount="450" />
-    <Orb type="Eternal" OrbAmount="1" ChaosAmount="50" />
+    <Orb type="Mirror" OrbAmount="1" ChaosAmount="9000" />
+    <Orb type="Eternal" OrbAmount="1" ChaosAmount="1000" />
     <Orb type="Imprint" OrbAmount="1" ChaosAmount="0" />
-    <Orb type="Exalted" OrbAmount="1" ChaosAmount="20" />
-    <Orb type="Divine" OrbAmount="1" ChaosAmount="8" />
-    <Orb type="GemCutterPrism" OrbAmount="1" ChaosAmount="2" />
-    <Orb type="Chisel" OrbAmount="2.5" ChaosAmount="1" />
-    <Orb type="Regal" OrbAmount="1" ChaosAmount="2" />
+    <Orb type="Exalted" OrbAmount="1" ChaosAmount="60" />
+    <Orb type="Divine" OrbAmount="1" ChaosAmount="21" />
+    <Orb type="GemCutterPrism" OrbAmount="3" ChaosAmount="5" />
+    <Orb type="Chisel" OrbAmount="7" ChaosAmount="2" />
+    <Orb type="Regal" OrbAmount="4" ChaosAmount="5" />
     <Orb type="Chaos" OrbAmount="1" ChaosAmount="1" />
     <Orb type="Regret" OrbAmount="1" ChaosAmount="1" />
     <Orb type="Blessed" OrbAmount="2" ChaosAmount="1" />
-    <Orb type="Scouring" OrbAmount="2.5" ChaosAmount="1" />
-    <Orb type="Fusing" OrbAmount="2.5" ChaosAmount="1" />
-    <Orb type="Alchemy" OrbAmount="2.5" ChaosAmount="1" />
-    <Orb type="AlchemyShard" OrbAmount="40" ChaosAmount="1" />
-    <Orb type="Chance" OrbAmount="8" ChaosAmount="1" />
-    <Orb type="JewelersOrb" OrbAmount="10" ChaosAmount="1" />
-    <Orb type="Alteration" OrbAmount="20" ChaosAmount="1" />
-    <Orb type="Chromatic" OrbAmount="20" ChaosAmount="1" />
-    <Orb type="VaalOrb" OrbAmount="1" ChaosAmount="1" />    "
+    <Orb type="Scouring" OrbAmount="1" ChaosAmount="1" />
+    <Orb type="Fusing" OrbAmount="2" ChaosAmount="1" />
+    <Orb type="Alchemy" OrbAmount="3.5" ChaosAmount="1" />
+    <Orb type="AlchemyShard" OrbAmount="56" ChaosAmount="1" />
+    <Orb type="Chance" OrbAmount="4" ChaosAmount="1" />
+    <Orb type="JewelersOrb" OrbAmount="7" ChaosAmount="1" />
+    <Orb type="Alteration" OrbAmount="12" ChaosAmount="1" />
+    <Orb type="Chromatic" OrbAmount="12" ChaosAmount="1" />
+    <Orb type="VaalOrb" OrbAmount="1" ChaosAmount="1" />
   </Ratios>
   <PopularGems>
     <Gem name="Cast when Damage Taken" />
