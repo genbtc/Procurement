@@ -8,7 +8,7 @@
         }
 
         public ItemQuantityFilter()
-            : base("Item Quantity", "Item with the Item Quantity stat", "INCREASED QUANTITY")
+            : base("Item Quantity (IIQ)", "Item with the Item Quantity stat", "INCREASED QUANTITY")
         { }
     }
 }

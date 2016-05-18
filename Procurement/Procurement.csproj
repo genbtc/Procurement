@@ -94,7 +94,7 @@
     </ApplicationDefinition>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-    </Compile>      
+    </Compile>
     <Compile Include="ApplicationState.cs" />
     <Compile Include="Controls\SetTabBuyoutView.xaml.cs">
       <DependentUpon>SetTabBuyoutView.xaml</DependentUpon>
@@ -233,6 +233,7 @@
     <Compile Include="ViewModel\Filters\BaseClasses\StatFilter.cs" />
     <Compile Include="ViewModel\Filters\BaseClasses\StatFilterBase.cs" />
     <Compile Include="ViewModel\Filters\CategoryManager.cs" />
+    <Compile Include="ViewModel\Filters\LevelFilter.cs" />
     <Compile Include="ViewModel\Filters\UserSearchFilter.cs" />
     <Compile Include="ViewModel\ForumExportVisitors\CurrencyVisitor.cs" />
     <Compile Include="ViewModel\SetTabBuyoutViewModel.cs" />

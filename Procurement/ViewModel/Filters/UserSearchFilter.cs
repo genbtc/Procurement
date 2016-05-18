@@ -11,13 +11,9 @@ namespace Procurement.ViewModel.Filters
         }
 
         private string filter;
-        private int minLevelReq;
-        private int maxLevelReq;
-        public UserSearchFilter(string filter,int minLevelReq=-1, int maxLevelReq=999)
+        public UserSearchFilter(string filter)
         {
             this.filter = filter;
-            this.minLevelReq = minLevelReq;
-            this.maxLevelReq = maxLevelReq;
         }
         public bool CanFormCategory
         {
@@ -41,17 +37,8 @@ namespace Procurement.ViewModel.Filters
 
             var gear = item as Gear;
 
-            //Check for min/max level requirements.
-            bool useminlvl = (minLevelReq != 0 || maxLevelReq != 999);
-            if (gear != null && gear.Requirements.Count > 0 && gear.Requirements[0].Name == "Level")
-            {
-                int lvl = System.Convert.ToInt16(gear.Requirements[0].Value);
-                if (useminlvl && (lvl < minLevelReq || lvl > maxLevelReq))
-                    return false;
-            }
             if (item.TypeLine.ToLower().Contains(filter.ToLower()) || item.Name.ToLower().Contains(filter.ToLower()) || containsMatchedCosmeticMod(item) || isMatchedGear(item))
                 return true;
-
 
             return gear != null && gear.SocketedItems.Any(Applicable);
         }

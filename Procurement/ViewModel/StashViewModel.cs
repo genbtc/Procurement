@@ -65,7 +65,19 @@ namespace Procurement.ViewModel
 
         private void processFilter()
         {
-            List<IFilter> allfilters = getUserFilter(filter, _minLevelReq, _maxLevelReq);
+            List<IFilter> allfilters = getUserFilter(filter);   //the user search text box filter
+
+        //BEGIN LEVEL REQUIREMENT CODE:
+            //remove stale lvl filter (everytime)
+            var filtersBeGone = CategoryManager.GetCategory("Level Requirement").Select(f => f.GetType()).ToList();
+            categoryFilter.RemoveAll(f => filtersBeGone.Contains(f.GetType()));
+            //update filter min/max level (see inside CategoryManager.cs)
+            CategoryManager.addDynamicLevelReqCategoryFilter(_minLevelReq, _maxLevelReq);
+            //put updated filter back if checkbox is still checked.
+            if (DoLevelReq)
+                categoryFilter.AddRange(CategoryManager.GetCategory("Level Requirement"));
+        //END LEVEL REQUIREMENT CODE (see SetCategoryFilter() below also)
+
             allfilters.AddRange(categoryFilter);
 
             foreach (var item in tabsAndContent)
@@ -90,9 +102,16 @@ namespace Procurement.ViewModel
 
         public bool LoggedIn { get { return !ApplicationState.Model.Offline; } }
 
+        private bool DoLevelReq;    //LEVEL REQUIREMENT CODE
         public void SetCategoryFilter(string category, bool? isChecked)
         {
-            if (!isChecked.Value)
+            //LEVEL REQUIREMENT CODE
+            if (isChecked != null && !isChecked.Value && (category.Contains("Level Requirement")))
+                DoLevelReq = false;
+            else if (isChecked != null && isChecked.Value && (category.Contains("Level Requirement")))
+                DoLevelReq = true;
+
+            if (isChecked != null && !isChecked.Value)
             {
                 var filtersBeGone = CategoryManager.GetCategory(category).Select(f => f.GetType()).ToList();
                 categoryFilter.RemoveAll(f => filtersBeGone.Contains(f.GetType()));
@@ -120,7 +139,7 @@ namespace Procurement.ViewModel
 
         public string Total
         {
-            get { return "Total " + configuredOrbType.ToString() + " in Orbs : " + ApplicationState.Stash[ApplicationState.CurrentLeague].GetTotal(configuredOrbType).ToString(); }
+            get { return "Total " + configuredOrbType + " in Orbs : " + ApplicationState.Stash[ApplicationState.CurrentLeague].GetTotal(configuredOrbType); }
         }
 
         public Dictionary<OrbType, double> TotalDistibution
@@ -147,8 +166,7 @@ namespace Procurement.ViewModel
             get
             {
                 var tempstring = "";
-                SortedDictionary<string, int> gemdict = ApplicationState.Stash[ApplicationState.CurrentLeague].GetTotalGemDistribution();
-                foreach (var item in gemdict)
+                foreach (var item in GemDistribution)
                 {
                     tempstring += item.Key + ": ";
                     tempstring += item.Value;
@@ -175,10 +193,7 @@ namespace Procurement.ViewModel
             this._minLevelReq = 0;
             this._maxLevelReq = 999;
 
-            refreshCommand = new DelegateCommand(x =>
-            {
-                ScreenController.Instance.LoadRefreshView();
-            });
+            refreshCommand = new DelegateCommand(x => ScreenController.Instance.LoadRefreshView());
 
             categoryFilter = new List<IFilter>();
             AvailableCategories = CategoryManager.GetAvailableCategories();
@@ -202,7 +217,7 @@ namespace Procurement.ViewModel
         {
             try
             {
-                AvailableItems = ApplicationState.Stash[ApplicationState.CurrentLeague].Get<Item>().SelectMany(i => getSearchTerms(i)).Distinct().ToList();
+                AvailableItems = ApplicationState.Stash[ApplicationState.CurrentLeague].Get<Item>().SelectMany(getSearchTerms).Distinct().ToList();
             }
             catch (KeyNotFoundException kex)
             {
@@ -279,16 +294,12 @@ namespace Procurement.ViewModel
 
         private ContextMenu getContextMenu(Button target, TabControl tabControl)
         {
-            ContextMenu menu = new ContextMenu();
-            menu.PlacementTarget = target;
-            menu.Resources = expressionDark;
+            ContextMenu menu = new ContextMenu {PlacementTarget = target, Resources = expressionDark};
 
             foreach (TabItem item in tabControl.Items)
             {
-                MenuItem menuItem = new MenuItem();
-                menuItem.Tag = item;
-                menuItem.Header = item.Tag.ToString();
-                menuItem.Click += (o, e) => { closeAndSelect(menu, menuItem); };
+                MenuItem menuItem = new MenuItem {Tag = item, Header = item.Tag.ToString()};
+                menuItem.Click += (o, e) => closeAndSelect(menu, menuItem);
                 menu.Items.Add(menuItem);
             }
 
@@ -309,17 +320,21 @@ namespace Procurement.ViewModel
 
             for (int i = 1; i <= ApplicationState.Stash[ApplicationState.CurrentLeague].NumberOfTabs; i++)
             {
-                TabItem item = new TabItem();
+                TabItem item = new TabItem
+                {
+                    Header =
+                        StashHelper.GenerateTabImage(
+                            ApplicationState.Stash[ApplicationState.CurrentLeague].Tabs[i - 1], false),
+                    Tag = ApplicationState.Stash[ApplicationState.CurrentLeague].Tabs[i - 1].Name,
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    VerticalAlignment = VerticalAlignment.Top,
+                    Background = Brushes.Transparent,
+                    BorderBrush = Brushes.Transparent
+                };
 
-                item.Header = StashHelper.GenerateTabImage(ApplicationState.Stash[ApplicationState.CurrentLeague].Tabs[i - 1], false);
-                item.Tag = ApplicationState.Stash[ApplicationState.CurrentLeague].Tabs[i - 1].Name;
-                item.HorizontalAlignment = HorizontalAlignment.Left;
-                item.VerticalAlignment = VerticalAlignment.Top;
-                item.Background = Brushes.Transparent;
-                item.BorderBrush = Brushes.Transparent;
                 StashControl itemStash = new StashControl();
 
-                itemStash.SetValue(StashControl.FilterProperty, getUserFilter(filter, _minLevelReq, _maxLevelReq));
+                itemStash.SetValue(StashControl.FilterProperty, getUserFilter(filter));
                 item.Content = itemStash;
                 itemStash.TabNumber = ApplicationState.Stash[ApplicationState.CurrentLeague].Tabs[i - 1].i;
 
@@ -346,19 +361,18 @@ namespace Procurement.ViewModel
 
         private MenuItem getMenuItem(StashControl itemStash, string header, RoutedEventHandler handler)
         {
-            MenuItem menuItem = new MenuItem() { Header = header };
-            menuItem.Tag = itemStash;
+            MenuItem menuItem = new MenuItem {Header = header, Tag = itemStash};
             menuItem.Click += new RoutedEventHandler(handler);
 
             return menuItem;
         }
 
-        private static List<IFilter> getUserFilter(string filter,int minLevelReq=0, int maxLevelReq=999)
+        private static List<IFilter> getUserFilter(string filter)
         {
             if (string.IsNullOrEmpty(filter))
                 return new List<IFilter>();
 
-            UserSearchFilter searchCriteria = new UserSearchFilter(filter, minLevelReq, maxLevelReq);
+            UserSearchFilter searchCriteria = new UserSearchFilter(filter);
             return new List<IFilter>() { searchCriteria };
         }
 
@@ -375,8 +389,10 @@ namespace Procurement.ViewModel
                 if (Settings.TabsBuyouts.ContainsKey(tabName))
                     pricingInfo.Update(Settings.TabsBuyouts[tabName]);
 
-                SetTabBuyoutView buyoutView = new SetTabBuyoutView(pricingInfo, tabName);
-                buyoutView.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+                SetTabBuyoutView buyoutView = new SetTabBuyoutView(pricingInfo, tabName)
+                {
+                    WindowStartupLocation = WindowStartupLocation.CenterScreen
+                };
                 buyoutView.Update += buyoutView_Update;
                 buyoutView.ShowDialog();
             }

@@ -33,7 +33,7 @@ namespace Procurement.ViewModel.Filters.ForumExport
     class ChestFilter : GearTypeFilter
     {
         public ChestFilter()
-            : base(GearType.Chest, "BodyArmor")
+            : base(GearType.Chest, "BodyArmor (Chest)")
         { }
     }
 

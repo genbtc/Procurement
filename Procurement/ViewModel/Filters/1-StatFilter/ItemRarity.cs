@@ -8,7 +8,7 @@
         }
 
         public ItemRarityFilter()
-            : base("Item Rarity", "Item with the Item Rarity stat", "INCREASED RARITY")
+            : base("Item Rarity (IIR)", "Item with the Item Rarity stat", "INCREASED RARITY")
         { }
     }
 }

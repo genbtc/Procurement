@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Procurement.ViewModel.Filters.ForumExport;
 
 namespace Procurement.ViewModel.Filters
 {
@@ -31,8 +32,8 @@ namespace Procurement.ViewModel.Filters
 
         private static void initializeUserCategories()
         {
-            //For Testing and Illustration
             categories.Add("Craftable Whites", new List<IFilter>() { new NormalRarity(), new OrFilter(new FourLink(), new FiveLink()) });
+            addDynamicLevelReqCategoryFilter(0, 999);   //LEVEL REQUIREMENT CODE
         }
 
         public static List<IFilter> GetAvailableFilters()
@@ -55,6 +56,14 @@ namespace Procurement.ViewModel.Filters
         private static void initializeBaseCategories()
         {
             availableFilters.ForEach(f => categories.Add(f.Keyword, new List<IFilter>() { f }));
+        }
+
+        public static void addDynamicLevelReqCategoryFilter(int minlvl,int maxlvl)
+        {
+            //LEVEL REQUIREMENT CODE
+            if (categories.ContainsKey("Level Requirement"))
+                categories.Remove("Level Requirement");
+            categories.Add("Level Requirement", new List<IFilter>() {new LevelFilter(minlvl, maxlvl)});
         }
     }
 }

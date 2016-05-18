@@ -57,7 +57,7 @@ namespace Procurement.View
             var vm = this.DataContext as StashViewModel;
             if (vm == null)
                 return;
-            vm.Filter = vm.Filter;
+            vm.Filter = vm.Filter;  //setting this causes ProcessFilter() to be called which essentially forces a refresh
         }
 
     }
