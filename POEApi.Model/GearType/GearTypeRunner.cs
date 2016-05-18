@@ -32,16 +32,8 @@ namespace POEApi.Model
         public override bool IsCompatibleType(Gear item)
         {
             // First, check the general types, to see if there is an easy match.
-            foreach (var type in generalTypes)
-                if (item.TypeLine.Contains(type))
-                    return true;
-
             // Second, check all known types.
-            foreach (var type in compatibleTypes)
-                if (item.TypeLine.Contains(type))
-                    return true;
-
-            return false;
+            return generalTypes.Any(type => item.TypeLine.Contains(type)) || compatibleTypes.Any(type => item.TypeLine.Contains(type));
         }
 
         public override string GetBaseType(Gear item)
@@ -49,11 +41,7 @@ namespace POEApi.Model
             if (incompatibleTypes != null && incompatibleTypes.Any(t => item.TypeLine.Contains(t)))
                 return null;
 
-            foreach (var type in compatibleTypes)
-                if (item.TypeLine.Contains(type))
-                    return type;
-
-            return null;
+            return compatibleTypes.FirstOrDefault(type => item.TypeLine.Contains(type));
         }
     }
 
@@ -67,10 +55,7 @@ namespace POEApi.Model
 
         public override bool IsCompatibleType(Gear item)
         {
-            if (item.TypeLine.Contains("Ring") && !incompatibleTypes.Any(t => item.TypeLine.Contains(t)))
-                return true;
-
-            return false;
+            return item.TypeLine.Contains("Ring") && !incompatibleTypes.Any(t => item.TypeLine.Contains(t));
         }
     }
 
@@ -86,7 +71,7 @@ namespace POEApi.Model
     public class TalismanRunner : GearTypeRunnerBase
     {
         public TalismanRunner()
-            : base(GearType.Talisman, new List<string>() { "Talisman" })
+            : base(GearType.Talisman, Settings.GearBaseTypes[GearType.Talisman])
         {
             generalTypes.Add("Talisman");
         }
@@ -147,7 +132,7 @@ namespace POEApi.Model
     public class JewelRunner : GearTypeRunnerBase
     {
         public JewelRunner()
-            : base(GearType.Jewel, new List<string>())
+            : base(GearType.Jewel, Settings.GearBaseTypes[GearType.Jewel])
         {
             generalTypes.Add("Jewel");
         }

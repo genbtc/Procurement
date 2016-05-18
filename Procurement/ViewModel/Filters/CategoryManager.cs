@@ -21,13 +21,7 @@ namespace Procurement.ViewModel.Filters
 
         public static List<AdvancedSearchCategory> GetAvailableCategories()
         {
-            List<AdvancedSearchCategory> advancedSearchCategories = new List<AdvancedSearchCategory>();
-            foreach (var category in categories)
-            {
-                advancedSearchCategories.Add(new AdvancedSearchCategory(category.Key, string.Join(Environment.NewLine, category.Value.Select(filter => filter.Help))));
-            }
-
-            return advancedSearchCategories;
+            return categories.Select(category => new AdvancedSearchCategory(category.Key, string.Join(Environment.NewLine, category.Value.Select(filter => filter.Help)))).ToList();
         }
 
         public static IEnumerable<IFilter> GetCategory(string category)
@@ -38,7 +32,7 @@ namespace Procurement.ViewModel.Filters
         private static void initializeUserCategories()
         {
             //For Testing and Illustration
-            categories.Add("Craftables", new List<IFilter>() { new NormalRarity(), new OrFilter(new FourLink(), new FiveLink()) });
+            categories.Add("Craftable Whites", new List<IFilter>() { new NormalRarity(), new OrFilter(new FourLink(), new FiveLink()) });
         }
 
         public static List<IFilter> GetAvailableFilters()

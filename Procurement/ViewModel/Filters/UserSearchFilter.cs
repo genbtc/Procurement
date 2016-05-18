@@ -53,10 +53,7 @@ namespace Procurement.ViewModel.Filters
                 return true;
 
 
-            if (gear != null && gear.SocketedItems.Any(x => Applicable(x)))
-                return true;
-
-            return false;
+            return gear != null && gear.SocketedItems.Any(Applicable);
         }
 
         private bool containsMatchedCosmeticMod(Item item)
@@ -66,12 +63,9 @@ namespace Procurement.ViewModel.Filters
 
         private bool isMatchedGear(Item item)
         {
-            Gear gear = item as Gear;
+            var gear = item as Gear;
 
-            if (gear == null)
-                return false;
-
-            return gear.GearType.ToString().ToLower().Contains(filter.ToLower());
+            return gear != null && gear.GearType.ToString().ToLower().Contains(filter.ToLower());
         }
     }
 }
